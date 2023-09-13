@@ -13,20 +13,21 @@ int ft_atoi(char *str)
         str[x] == '\n' || str[x] == '\t' || str[x] == '\v' || str[x] == ' ')
         x++;
     while(str[x] == '-' || str[x] == '+')
+    {
         if(str[x] == '-')
         {
             n = n * -1;
         }
         x++;
+    }
     while(str[x] <= '9' && str[x] >= '0')
     {
-        final = final * 10;
-        final = final + str[x] -48;
+        final = final * 10 + str[x] -48;
         x++;
     }   
     return (final * n);    
 }
-
+/*
 #include <stdio.h>
 
 int     main(void)
@@ -34,4 +35,4 @@ int     main(void)
     char str1[] = "    ---+--+1234ab567";
 
     printf("%d", ft_atoi(str1));
-}
+}*/
