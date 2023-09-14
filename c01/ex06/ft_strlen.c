@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void	ft_putstr(char *str)
+int	ft_strlen(char *str)
 {
 	int	x;
 
@@ -9,14 +9,15 @@ void	ft_putstr(char *str)
 	{
 		write(1, &str[x], 1);
 		x++;
-	}
+	}		
 }
 
 #include <stdio.h>
 
 int	main(void)
 {
-	char	str1[] = "monkeydluffy";
-
-	ft_putstr(str1);
+	char	*str1;
+	
+	str1 = "abcdef";
+	ft_strlen(str1);
 }
