@@ -1,1 +1,1 @@
-This are the updated exercises I delivered in my piscine.
+These are the updated exercises I delivered in my piscine.
