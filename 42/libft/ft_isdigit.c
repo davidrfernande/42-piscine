@@ -22,7 +22,7 @@ int	ft_isdigit(int n)
 /*
 #include <stdio.h>
 
-int	main()
+int	main(void)
 {
 	char	n = 'i';
 

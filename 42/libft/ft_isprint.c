@@ -22,7 +22,7 @@ int	ft_isprint(int c)
 /*
 #include <stdio.h>
 
-int	main()
+int	main(void)
 {
 	char	c = 18;
 

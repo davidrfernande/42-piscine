@@ -34,7 +34,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int	main(void) {
     // Defina uma string de origem
     char origem[] = "Hello, World!";
     // Defina um array de destino com espaço suficiente para a string de origem
@@ -47,5 +47,5 @@ int main() {
     printf("Origem: %s\n", origem);
     printf("Destino: %s\n", destino);
 
-    return 0;
+    return (0);
 }*/
