@@ -35,5 +35,5 @@ int main()
 {
     char    *str = "ola";
 
-    printf("%d", ft_strdup(str));
+    printf("%s", ft_strdup(str));
 }*/
