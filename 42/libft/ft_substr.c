@@ -18,14 +18,14 @@ char    *ft_substr(char const *s, unsigned int start, size_t len)
     char    *sub;
     size_t y;
 
-    sub = (char *)malloc(len * sizeof(char));
+    sub = (char *)malloc((len + 1) * sizeof(char));
     x = 0;
     y = 0;
     if (!sub)
         return (0);
     while (s[x] != '\0')
     {
-        if (s[x] == (char)start)
+        if (x == start)
         {
             while (y != len)
             {
@@ -36,13 +36,14 @@ char    *ft_substr(char const *s, unsigned int start, size_t len)
         }
         x++;
     }
+    sub[y] = '\0';
     return (sub);
 }
 /*
 int main()
 {
     char    *str = "onepiece";
-    char    st = 'p';
+    int st = 0;fra
     int s = 3;
 
     printf("%s", ft_substr(str, st, s));
