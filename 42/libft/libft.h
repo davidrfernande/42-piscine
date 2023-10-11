@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 17:29:09 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/10 17:00:39 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/11 17:05:29 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+#include <stdio.h>
 
 int		ft_isalnum(int c);
 
@@ -59,4 +60,13 @@ char	*ft_strnstr(const char *hay, const char *needle, size_t n);
 int		ft_atoi(const char *str);
 
 void	*ft_calloc(size_t nitems, size_t size);
+
+char    *ft_strdup(const char *string);
+
+char    *ft_substr(char const *s, unsigned int start, size_t len);
+
+char    *ft_strjoin(char const *s1, char const *s2);
+
+char    *ft_strtrim(char const *s1, char const *set);
+
 #endif
