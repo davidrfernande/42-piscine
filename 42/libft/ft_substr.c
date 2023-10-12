@@ -3,48 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/11 14:08:25 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/11 14:08:25 by marvin           ###   ########.fr       */
+/*   Created: 2023/10/12 11:54:51 by davidro2          #+#    #+#             */
+/*   Updated: 2023/10/12 18:22:05 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    size_t x;
-    char    *sub;
-    size_t y;
+	size_t	x;
+	char	*sub;
+	size_t	y;
 
-    sub = (char *)malloc((len + 1) * sizeof(char));
-    x = 0;
-    y = 0;
-    if (!sub)
-        return (0);
-    while (s[x] != '\0')
-    {
-        if (x == start)
-        {
-            while (y != len)
-            {
-                sub[y] = s[x];
-                x++;
-                y++;
-            }
-        }
-        x++;
-    }
-    sub[y] = '\0';
-    return (sub);
+	if (len >= 4294967295)
+		len = 4294967295;
+	sub = (char *)malloc((len + 1) * sizeof(*s));
+	x = start;
+	y = 0;
+	if (sub == NULL || !s)
+		return (NULL);
+	while (y < len && start <= ft_strlen(s))
+	{
+		sub[y] = s[start];
+		y++;
+		start++;
+	}
+	sub[y] = '\0';
+	return (sub);
 }
-/*
-int main()
-{
-    char    *str = "onepiece";
-    int st = 0;fra
-    int s = 3;
-
-    printf("%s", ft_substr(str, st, s));
-}*/

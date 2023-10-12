@@ -3,12 +3,52 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/11 17:04:32 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/11 17:04:32 by marvin           ###   ########.fr       */
+/*   Created: 2023/10/12 18:27:33 by davidro2          #+#    #+#             */
+/*   Updated: 2023/10/12 18:30:04 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+static int	ft_trim(char s1, char *set)
+{
+	size_t	set_len;
+	int		found;
+	int		i;
+
+	i = 0;
+	found = 0;
+	set_len = ft_strlen(set);
+	while (set_len > 0)
+	{
+		if (s1 == (char)set[i])
+			return (1);
+		i++;
+		set_len--;
+	}
+	return (0);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	int		l;
+	int		r;
+	char	*trim;
+	char	*str;
+	char	*sett;
+
+	str = (char *)s1;
+	sett = (char *)set;
+	l = 0;
+	r = ft_strlen(s1) - 1;
+	while (ft_trim(str[l], sett))
+		l++;
+	while (ft_trim(str[r], sett))
+		r--;
+	trim = ft_substr(str, l, r - l + 1);
+	if (!trim)
+		return (NULL);
+	return (trim);
+}

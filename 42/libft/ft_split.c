@@ -3,16 +3,11 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/11 17:17:03 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/11 17:17:03 by marvin           ###   ########.fr       */
+/*   Created: 2023/10/12 14:30:48 by davidro2          #+#    #+#             */
+/*   Updated: 2023/10/12 14:31:05 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char    **ft_split(char const *s, char c)
-{
-     
-}
