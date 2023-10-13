@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 14:30:48 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/13 14:19:34 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/14 00:01:11 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_countc(char *str, char c)
+int	ft_countw(char *str, char c)
 {
 	int	i;
 	int	w;
@@ -23,18 +23,18 @@ int	ft_countc(char *str, char c)
 	{
 		if (str[i] != c)
 			w++;
-			while (str[i] != c j
+			while (str[i] != c 
 		i++;
 	}
-	return (l);
+	return (w);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	int	countc;
+	int	countw;
 	int	x;
 	int	y;
 
-	countc = ft_countc(s, c);
+	countw = ft_countw(s, c);
 	x = 
 }
