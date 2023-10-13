@@ -6,7 +6,7 @@
 #    By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/04 15:30:18 by davidro2          #+#    #+#              #
-#    Updated: 2023/10/12 16:09:16 by davidro2         ###   ########.fr        #
+#    Updated: 2023/10/13 13:08:16 by davidro2         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ SRC = \
 	ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
 	ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
 	ft_atoi.c ft_calloc.c ft_strdup.c ft_strjoin.c ft_substr.c ft_strtrim.c \
-	
+	ft_split.c ft_putchar_fd.c
 
 OBJS = $(SRC:.c=.o)
 
