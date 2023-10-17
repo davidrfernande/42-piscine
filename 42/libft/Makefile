@@ -1,14 +1,14 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/10/04 15:30:18 by davidro2          #+#    #+#              #
-#    Updated: 2023/10/13 13:08:16 by davidro2         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+#**************************************************************************** #
+# #
+# :: : :: :: :: ::#
+#Makefile : + : : + : : + : #
+#+ : + + : + + : + #
+#By : davidro2 < davidro2 @student .42.fr> + # + + : ++# + #
+#+ #+ #+ #+ #+ #+ + #+ #
+#Created : 2023 / 10 / 04 15 : 30 : 18 by davidro2 # + # # + # #
+#Updated : 2023 / 10 / 13 13 : 08 : 16 by davidro2## # ########.fr #
+# #
+#**************************************************************************** #
 
 SRC = \
 	ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
@@ -16,7 +16,8 @@ SRC = \
 	ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
 	ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
 	ft_atoi.c ft_calloc.c ft_strdup.c ft_strjoin.c ft_substr.c ft_strtrim.c \
-	ft_split.c ft_putchar_fd.c
+	ft_split.c ft_putchar_fd.c ft_itoa.c ft_strmapi.c ft_striteri.c \
+	ft_putstr_fc ft_putendl_fd.c
 
 OBJS = $(SRC:.c=.o)
 

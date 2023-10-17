@@ -6,13 +6,15 @@
 /*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 14:30:48 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/16 17:28:32 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/17 17:38:59 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-
+// Allocates (with malloc(3)) and returns an array
+// of strings obtained by splitting ’s’ using the
+// character ’c’ as a delimiter. The array must end
+// with a NULL pointer.
 static int	ft_countw(const char *str, char c)
 {
 	int	i;
@@ -30,14 +32,12 @@ static int	ft_countw(const char *str, char c)
 	}
 	if (str[i - 1] == c)
 		w--;
-	printf("words = %d\n", w);
 	return (w);
 }
 
 int	ft_findc(char const *s, int start, char c)
 {
-	while (s[start] && s[start] != c)
-		start++;
+	while (s[++start] && s[++start] != c);
 	return (start);
 }
 
@@ -45,13 +45,14 @@ char	*ft_worddup(char const *s, int start, char c)
 {
 	int		i;
 	char	*str;
-	int		l;
+	int		finish;
 
-	l = ft_findc(s, start, c);
+	finish = ft_findc(s, start, c);
 	i = 0;
-	if (!s || !(str = (char *)malloc((l - start + 1) * sizeof(char *))))
-		return NULL;
-	while (start < l)
+	str = (char *)malloc((finish - start + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
+	while (start < finish)
 		str[i++] = s[start++];
 	str[i] = '\0';
 	return (str);
@@ -59,31 +60,26 @@ char	*ft_worddup(char const *s, int start, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	int		x;
-	int		y;
-	int		i;
+	int			x;
+	size_t		i;
 	char	**strs;
-	
+
 	x = 0;
 	i = 0;
-	y = 0;
-	if(!s || !(strs = (char **)malloc((ft_countw(s, c) + 1) * sizeof(char *))))
-		return NULL;
-	while (s[i])
+	strs = (char **)malloc((ft_countw(s, c) + 1) * sizeof(char *));
+	if (!strs)
+		return (NULL);
+	while (i <= ft_strlen(s))
 	{
 		while (s[i] == c)
 			i++;
 		while (s[i] != c)
-			strs[x++] = ft_worddup(s, i, c);//copia o s para uma das strs
-		x++;
+		{
+			strs[x++] = ft_worddup(s, i, c);
+			while (s[i] != c)
+				i++;
+		}
 	}
+	strs[x] = 0;
 	return (strs);
 }
-
-// int	main()
-// {
-// 	char	*str = "onepieceisrealiii";
-// 	char	c = 'i';
-// 	ft_split(str, c);
-// 	return (0);
-// }

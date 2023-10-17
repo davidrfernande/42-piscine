@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 13:06:34 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/17 17:36:08 by davidro2         ###   ########.fr       */
+/*   Created: 2023/10/17 17:30:02 by davidro2          #+#    #+#             */
+/*   Updated: 2023/10/17 17:35:54 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//Outputs the character ’c’ to the given file descriptor.
-void	ft_putchar_fd(char c, int fd)
+//Outputs the string ’s’ to the given file descriptor
+void    ft_putstr_fd(char *s, int fd)
 {
-	write(fd, &c, 1);
+    unsigned int    i;
+
+    i = 0;
+    if (s)
+    {
+        while (s[i])
+        {
+            ft_putchar_fd(fd, &s[i], 1);
+            i++;
+        }
+    }
 }
