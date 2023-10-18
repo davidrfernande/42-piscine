@@ -6,14 +6,16 @@
 /*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 18:27:33 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/17 17:39:21 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/18 13:46:08 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 // Allocates (with malloc(3)) and returns a copy of
 // ’s1’ with the characters specified in ’set’ removed
 // from the beginning and the end of the string.
+
 static int	ft_trim(char s1, char *set)
 {
 	size_t	set_len;

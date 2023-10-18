@@ -6,7 +6,7 @@
 /*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 17:42:20 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/17 17:43:24 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:31:33 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void    ft_putendl_fd(char *s, int fd)
 {
     ft_putstr_fd(s, fd);
-    ft_putchar_fd(fd, "\n", 1);
+    ft_putchar_fd(10, fd);
 }
