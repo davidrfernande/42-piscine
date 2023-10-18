@@ -18,9 +18,9 @@
 
 int	ft_intlen(int n)
 {
-	int len;
-	int nr;
-	
+	int	len;
+	int	nr;
+
 	nr = n;
 	len = 0;
 	if (n == 0)
@@ -40,9 +40,9 @@ int	ft_intlen(int n)
 
 char	*ft_itoa(int n)
 {
-	char	*str;
-	unsigned int		len;
-	unsigned int		nr;
+	char			*str;
+	unsigned int	len;
+	unsigned int	nr;
 
 	len = ft_intlen(n);
 	str = (char *)malloc((len + 1) * sizeof(char));

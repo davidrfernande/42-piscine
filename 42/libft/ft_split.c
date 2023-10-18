@@ -39,9 +39,9 @@ static int	ft_countw(const char *str, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	int			x;
-	int			j;
-	size_t		i;
+	int		x;
+	int		j;
+	size_t	i;
 	char	**strs;
 
 	x = 0;

@@ -6,7 +6,7 @@
 /*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 18:27:33 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/18 13:46:08 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/18 15:58:38 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,9 @@
 static int	ft_trim(char s1, char *set)
 {
 	size_t	set_len;
-	int		found;
 	int		i;
 
 	i = 0;
-	found = 0;
 	set_len = ft_strlen(set);
 	while (set_len > 0)
 	{
