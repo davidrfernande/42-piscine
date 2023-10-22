@@ -35,17 +35,17 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 #include <string.h>
 
 int	main(void) {
-    // Defina uma string de origem
-    char origem[] = "Hello, World!";
-    // Defina um array de destino com espaço suficiente para a string de origem
-    char destino[20];
+	// Defina uma string de origem
+	char origem[] = "Hello, World!";
+	// Defina um array de destino com espaço suficiente para a string de origem
+	char destino[20];
 
-    // Use my_memcpy para copiar a string de origem para o destino
-    ft_memcpy(destino, origem, strlen(origem) + 1);
+	// Use my_memcpy para copiar a string de origem para o destino
+	ft_memcpy(destino, origem, strlen(origem) + 1);
 
-    // Imprima a string de origem e a string de destino para verificar a cópia
-    printf("Origem: %s\n", origem);
-    printf("Destino: %s\n", destino);
+	// Imprima a string de origem e a string de destino para verificar a cópia
+	printf("Origem: %s\n", origem);
+	printf("Destino: %s\n", destino);
 
-    return (0);
+	return (0);
 }*/
