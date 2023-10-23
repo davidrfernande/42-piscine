@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 13:06:34 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/23 15:06:44 by davidro2         ###   ########.fr       */
+/*   Created: 2023/10/23 13:08:02 by davidro2          #+#    #+#             */
+/*   Updated: 2023/10/23 17:51:54 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//Outputs the character ’c’ to the given file descriptor.
-
-void	ft_putchar_fd(char c, int fd)
+t_list	*ft_lstnew(void *content)
 {
-	write(fd, &c, 1);
+	t_list	*new;
+
+	new = malloc(sizeof(t_list));
+	if (!new)
+		return (NULL);
+	new->content = content;
+	new->next = NULL;
+	return (new);
 }
-
-// int	main(void)
-// {
-// 	int fd = 1;
-// 	char c = 'c';
-
-// 	ft_putchar_fd(c , fd);
-// }

@@ -17,9 +17,15 @@ SRC = \
 	ft_strrchr.c ft_strncmp.c ft_memchr.c ft_memcmp.c ft_strnstr.c \
 	ft_atoi.c ft_calloc.c ft_strdup.c ft_strjoin.c ft_substr.c ft_strtrim.c \
 	ft_split.c ft_putchar_fd.c ft_itoa.c ft_strmapi.c ft_striteri.c \
-	ft_putstr_fd.c ft_putendl_fd.c
+	ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+
+BSRC = \
+	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
+
 
 OBJS = $(SRC:.c=.o)
+
+BOBJS = $(BSRC:.c=.o)
 
 NAME = libft.a
 
@@ -31,8 +37,8 @@ RM = rm -f
 
 all:	$(NAME)
 
-$(NAME):	$(OBJS)
-			ar rsc $(NAME) $(OBJS)
+$(NAME):	$(OBJS) $(BOBJS)
+			ar rsc $(NAME) $(OBJS) $(BOJS)
 
 clean:
 			$(RM) $(OBJS)
@@ -41,5 +47,8 @@ fclean:		clean
 			$(RM) $(NAME)
 
 re:			fclean all
+
+bonus:		$(BOBJS)
+			ar rsc $(NAME) $(BOBJS)
 
 .PHONY:	all clean fclean re
