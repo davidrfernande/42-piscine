@@ -6,7 +6,7 @@
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 17:29:09 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/23 18:56:44 by david            ###   ########.fr       */
+/*   Updated: 2023/10/23 19:02:30 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,6 @@ t_list				*ft_lstlast(t_list *lst);
 
 void				ft_lstadd_back(t_list **lst, t_list *new);
 
-
+void    ft_lstdelone(t_list *lst, void (*del)(void*));
 
 #endif
