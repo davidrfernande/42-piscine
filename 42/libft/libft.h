@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 17:29:09 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/23 17:08:48 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/23 18:56:44 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,5 +99,7 @@ int					ft_lstsize(t_list *lst);
 t_list				*ft_lstlast(t_list *lst);
 
 void				ft_lstadd_back(t_list **lst, t_list *new);
+
+
 
 #endif
