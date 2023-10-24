@@ -21,7 +21,7 @@ SRC = \
 
 BSRC = \
 	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-	ft_lstdelone.c
+	ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 OBJS = $(SRC:.c=.o)
 
@@ -41,7 +41,7 @@ $(NAME):	$(OBJS) $(BOBJS)
 			ar rsc $(NAME) $(OBJS) $(BOJS)
 
 clean:
-			$(RM) $(OBJS)
+			$(RM) $(OBJS) $(BOBJS)
 
 fclean:		clean
 			$(RM) $(NAME)
