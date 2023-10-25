@@ -18,15 +18,15 @@
 // Finally, the pointer to the list must be set to
 // NULL.
 
-void    ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-    t_list  *temp;
-    
-    while (*lst)
-    {  
-        temp = (*lst)->next;
-        ft_lstdelone(*lst, del);
-        *lst = temp;
-    }
-    *lst = NULL;
+	t_list	*temp;
+
+	while (*lst)
+	{
+		temp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = temp;
+	}
+	*lst = NULL;
 }
