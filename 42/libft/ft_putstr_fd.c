@@ -6,7 +6,7 @@
 /*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 17:30:02 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/18 15:44:46 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/26 16:40:18 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,12 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
+
+// int	main()
+// {
+// 	int	fd;
+
+// 	fd = open("./txt/testputstr.txt", O_WRONLY | O_CREAT |  O_TRUNC, 0642);
+// 	ft_putstr_fd("onepiece", fd);
+// 	close(fd);
+// }

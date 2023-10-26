@@ -6,7 +6,7 @@
 /*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 17:47:57 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/18 17:51:12 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/26 16:56:33 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,24 @@ void	ft_putnbr_fd(int n, int fd)
 	n = n % 10 + '0';
 	ft_putchar_fd(n, fd);
 }
+
+// int	main()
+// {
+// 	int	fd;
+// 	int	nr;
+
+// 	fd = 1;
+// 	nr = 1234567890;
+// 	ft_putnbr_fd(nr, fd);
+// }
+
+// int	main()
+// {
+// 	int	fd;
+// 	int	nr;
+	
+// 	nr = 123456789;
+// 	fd = open ("./txt/testputnbr_fd", O_WRONLY | O_CREAT | O_TRUNC, 0642);
+// 	ft_putnbr_fd(nr, fd);
+// 	close(fd);
+// }

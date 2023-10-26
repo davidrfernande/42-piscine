@@ -6,7 +6,7 @@
 /*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 13:08:02 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/24 14:39:08 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/26 15:28:06 by davidro2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 // The member variable ’content’ is initialized with
 // the value of the parameter ’content’. The variable
 // ’next’ is initialized to NULL.
+
+// content: The content to create the node with.
 
 t_list	*ft_lstnew(void *content)
 {
