@@ -32,7 +32,7 @@ void	ft_putnbr_fd(int n, int fd)
 	ft_putchar_fd(n, fd);
 }
 
-// int	main()
+// int	main(void)
 // {
 // 	int	fd;
 // 	int	nr;
@@ -42,11 +42,11 @@ void	ft_putnbr_fd(int n, int fd)
 // 	ft_putnbr_fd(nr, fd);
 // }
 
-// int	main()
+// int	main(void)
 // {
 // 	int	fd;
 // 	int	nr;
-	
+
 // 	nr = 123456789;
 // 	fd = open ("./txt/testputnbr_fd", O_WRONLY | O_CREAT | O_TRUNC, 0642);
 // 	ft_putnbr_fd(nr, fd);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 10:19:33 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/26 15:15:06 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/27 01:51:04 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 // the node’s content using the function ’del’ given
 // as a parameter and free the node. The memory of
 // ’next’ must not be freed.
-
+ATENCAO MUDAR ESTA DESCRICAO
 // lst: The node to free.
 // del: The address of the function used to delete
 // the content.

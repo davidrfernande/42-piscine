@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 12:52:35 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/06 16:33:35 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/27 01:27:17 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// sets a block of memory to zero
 
 void	ft_bzero(void *str, size_t n)
 {

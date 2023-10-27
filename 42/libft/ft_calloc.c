@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 16:09:13 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/18 14:14:35 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/27 01:31:01 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+// allocates memory for an arrays with zeros.
+// 'nitems' is the number of elements that is going
+// to allocate and 'size' is the size of each item.
 
 void	*ft_calloc(size_t nitems, size_t size)
 {
