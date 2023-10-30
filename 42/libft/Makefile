@@ -37,8 +37,8 @@ RM = rm -f
 
 all:	$(NAME)
 
-$(NAME):	$(OBJS) $(BOBJS)
-			ar rsc $(NAME) $(OBJS) $(BOJS)
+$(NAME):	$(OBJS)
+			ar rsc $(NAME) $(OBJS)
 
 clean:
 			$(RM) $(OBJS) $(BOBJS)

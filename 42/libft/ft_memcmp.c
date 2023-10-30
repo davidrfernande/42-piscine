@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:11:37 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/10 12:18:07 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/27 18:33:14 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//compares to sets of memorys and returns the diferrence between
+//them, only reading the number of characters given in 'num'
 
 int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 {

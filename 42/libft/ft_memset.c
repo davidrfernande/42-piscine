@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 15:31:18 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/06 16:46:19 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/29 01:23:58 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//fills a block of memory with a certain character
 
 void	*ft_memset(void *str, int c, size_t n)
 {

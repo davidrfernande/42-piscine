@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 18:11:53 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/10 10:35:22 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/29 15:47:02 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//returns the first occurrence of the character 'c'
+//in the string, if not occurred return null.
 char	*ft_strchr(const char *str, int c)
 {
 	int	x;

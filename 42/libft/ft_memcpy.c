@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 16:48:54 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/06 18:22:07 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/27 18:34:14 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//copys 'n' bytes form the memory in 'src' to 'dest'
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

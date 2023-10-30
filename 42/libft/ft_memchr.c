@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 11:36:04 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/10 12:07:44 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/27 18:31:28 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//search for the first occurrence of a specific byte ('c') in
+//a block of memory. 'n' is the number of bytes to be checked
+//in the memory 's'
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 10:54:50 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/17 17:39:36 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/29 15:54:01 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 // Allocates (with malloc(3)) and returns a new
 // string, which is the result of the concatenation
 // of ’s1’ and ’s2’.
+
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*str;

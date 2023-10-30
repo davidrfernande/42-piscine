@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 11:54:51 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/23 16:53:47 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/30 00:37:44 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 // Allocates (with malloc(3)) and returns a substring
 // from the string ’s’.
 // The substring begins at index ’start’ and is of
-// maximum size ’len’.
+// maximum size ’len’, "stop".
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -43,3 +43,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[y] = '\0';
 	return (sub);
 }
+
+// int	main()
+// {
+// 	char	*str = "onepieceisreal";
+// 	int	start = 0;
+// 	int	stop = 8;
+
+// 	printf("%s", ft_substr(str, start, stop));
+// }

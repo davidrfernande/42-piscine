@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:16:03 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/26 15:06:25 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/27 18:16:20 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,3 +52,37 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new);
 }
+// //function that changes the content of the old list
+// //to the new one
+
+// void	*change_status(void *content)
+// {
+// 	content = ft_strdup("onepiece");
+// 	return (content);
+// }
+// //function free content
+// void	free_content(void *content)
+// {
+// 	free(content);
+// }
+// int	main()
+// {
+// 	t_list	*node1 = ft_lstnew("david");
+// 	t_list	*node2 = ft_lstnew("diogo");
+// 	t_list	*node3 = ft_lstnew("anton");
+// 	t_list	*node4 = ft_lstnew("fabio");
+// 	t_list	*new_list;
+// 	t_list	*temp;
+// 	node1->next = node2;
+// 	node2->next = node3;
+// 	node3->next = node4;
+// 	new_list = ft_lstmap(node1, change_status, free_content);
+// 	temp = new_list;
+// 	while (temp != NULL)
+// 	{
+// 		printf("%s\n", (char *)temp->content);
+// 		temp = temp->next;
+// 	}
+// 	ft_lstclear(&new_list, free);
+// 	return 0;
+// }

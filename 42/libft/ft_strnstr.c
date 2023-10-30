@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 12:20:26 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/10 15:49:05 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/30 00:29:28 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//finds the string 'needle' in the string 'hay'
+//if it finds returns a pointer to the first occurrence of 'needle'
+//in 'hay'
 
 char	*ft_strnstr(const char *hay, const char *needle, size_t n)
 {

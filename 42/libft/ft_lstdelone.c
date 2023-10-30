@@ -6,20 +6,15 @@
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 10:19:33 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/27 01:51:04 by david            ###   ########.fr       */
+/*   Updated: 2023/10/27 11:06:50 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Takes as a parameter a node and frees the memory of
-// the node’s content using the function ’del’ given
-// as a parameter and free the node. The memory of
-// ’next’ must not be freed.
-ATENCAO MUDAR ESTA DESCRICAO
-// lst: The node to free.
-// del: The address of the function used to delete
-// the content.
+// frees the memory of the node ('lst') content using the 
+// function 'del' and frees the node, the memory of the
+// next node shouldnt be freed.
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {

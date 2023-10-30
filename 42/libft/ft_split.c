@@ -6,7 +6,7 @@
 /*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 14:30:48 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/27 01:27:58 by david            ###   ########.fr       */
+/*   Updated: 2023/10/27 14:56:10 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,11 +78,9 @@ char	**ft_split(char const *s, char c)
 // 	char	*str = "onepieceisreal";
 // 	char	c = 'i';
 // 	char	**splitted;
-	
 // 	splitted = ft_split(str, c);
 // 	ft_printstrs(splitted);
 // 	int i = 0;
-
 // 	while (splitted[i])
 // 	{
 // 		free (splitted[i]);

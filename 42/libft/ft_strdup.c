@@ -3,14 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 10:48:05 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/12 14:24:46 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/29 15:48:09 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//duplicates a string allocating memory to the 
+//duplication
 
 char	*ft_strdup(const char *string)
 {

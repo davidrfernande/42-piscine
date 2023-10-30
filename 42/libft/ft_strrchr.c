@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/09 18:51:32 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/09 18:59:38 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/30 00:30:31 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+//returns the last occurrence of the character 'c'
+//in the string, if not occurred return null.
 char	*ft_strrchr(const char *str, int c)
 {
 	int	x;

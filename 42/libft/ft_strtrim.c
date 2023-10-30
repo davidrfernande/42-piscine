@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: davidro2 <davidro2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: david <david@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 18:27:33 by davidro2          #+#    #+#             */
-/*   Updated: 2023/10/18 15:58:38 by davidro2         ###   ########.fr       */
+/*   Updated: 2023/10/30 00:35:06 by david            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,3 +54,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	return (trim);
 }
+
+// int	main()
+// {
+// 	char	*str = "pponepiecepp";
+
+// 	printf("%s", ft_strtrim(str, "p"));
+// }
